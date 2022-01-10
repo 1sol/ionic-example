@@ -1,5 +1,5 @@
 import SkinAnalysisPage from "@pages/skinAnalysis/SkinAnalysisPage";
-import QestionPage from "@pages/skinAnalysis/question/QestionPage";
+import QuestionPage from "@pages/skinAnalysis/question/QuestionPage";
 import UploadPage from "@pages/skinAnalysis/upload/UploadPage";
 import ResultPage from "@pages/skinAnalysis/result/ResultPage";
 
@@ -24,7 +24,7 @@ const skinAnalysisRouteConfigs = [
     path: "/skin/question",
     title: "피부 문진",
     exact: true,
-    component: QestionPage,
+    component: QuestionPage,
   },
   /**
    * 사진 업로드
