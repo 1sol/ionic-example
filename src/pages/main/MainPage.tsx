@@ -11,15 +11,11 @@ const MainPage: React.FC = () => {
     <IonPage>
       <IonHeader>
         <IonToolbar>
-          <IonTitle>Main</IonTitle>
+          <IonTitle>LOGO</IonTitle>
         </IonToolbar>
       </IonHeader>
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">main</IonTitle>
-          </IonToolbar>
-        </IonHeader>
+        <h1>main</h1>
       </IonContent>
     </IonPage>
   );
