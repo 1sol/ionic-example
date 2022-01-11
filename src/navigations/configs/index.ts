@@ -1,3 +1,3 @@
-import BottomTabConfigs from "./BottomTabConfigs";
+import bottomTabConfigs from "./BottomTabConfigs";
 
-export default BottomTabConfigs;
+export default bottomTabConfigs;

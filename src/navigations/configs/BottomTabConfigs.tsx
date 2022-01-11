@@ -13,45 +13,42 @@ import {
 export default [
   {
     path: "/",
-    name: "홈",
+    tab: "홈",
     component: MainPage,
   },
   {
     path: "/skin/analysis",
-    name: "내 피부분석",
-    exact: true,
+    tab: "내 피부분석",
     component: SkinAnalysis,
   },
   {
     path: "/skin/change",
-    name: "내 피부변화",
-    exact: true,
+    tab: "내 피부변화",
     component: SkinChange,
   },
   {
     path: "/skin/record",
-    name: "피부기록",
-    exact: true,
+    tab: "피부기록",
     component: SkinRecord,
   },
   {
     path: "/hospital",
-    name: "병원찾기",
+    tab: "병원 찾기",
     component: Hospital,
   },
   {
-    path: "/video",
-    name: "1분 피부 영상",
+    path: "video",
+    tab: "1분 피부 영상",
     component: Video,
   },
   {
     path: "/encyclopedia",
-    name: "피부 백과사전",
+    tab: "피부 백과사전",
     component: Encyclopedia,
   },
   {
     path: "/mypage",
-    name: "마이페이지",
+    tab: "마이페이지",
     component: Mypage,
   },
 ];

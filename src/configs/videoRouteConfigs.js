@@ -5,7 +5,7 @@ const videoPageConfigs = [
    * 1분 피부 영상
    */
   {
-    path: "/skin/video",
+    path: "/video",
     title: "1분 피부 영상",
     exact: true,
     component: VideoPage,
