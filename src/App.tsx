@@ -19,11 +19,13 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import PageRouter from "./routes";
+import { GlobalStyle } from "./styles/modules/global";
 
 setupIonicReact();
 
 const App: React.FC = () => (
   <IonPage>
+    <GlobalStyle />
     <PageRouter />
   </IonPage>
 );

@@ -5,7 +5,7 @@
       "@environments": ["./src/environments.js"],
       "@assets/*": ["../public/assets/*", "../public/assets"],
       "@components": ["./src/components"],
-      "@containers": ["./src/components/containers"],
+      "@container": ["./src/components/container"],
       "@presentational": ["./src/components/presentational"],
       "@navigations": ["./src/navigations"],
       "@configs": ["./src/configs"],
