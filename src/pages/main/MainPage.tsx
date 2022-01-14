@@ -5,23 +5,13 @@ import {
   IonTitle,
   IonContent,
 } from "@ionic/react";
-import Footer from "@container";
+import Footer from "../../components/container/Footer";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const Main = styled(IonPage)`
   .contents {
     padding: 0 20px;
-  }
-`;
-
-const MainAnalysisResult = styled.div``;
-
-const Title = styled.h6``;
-
-const MainAnalysisAlarm = styled.div``;
-const AlarmText = styled.div`
-  p {
-    font-size: 14px;
   }
 `;
 
@@ -37,18 +27,9 @@ const MainPage: React.FC = () => {
       </IonHeader>
       <IonContent>
         <div className="contents">
-          <MainAnalysisResult>
-            <Title>분석 결과</Title>
-            <MainAnalysisAlarm>
-              <AlarmText>
-                <p>내 피부 분석을 하면 분석 결과를 볼 수 있습니다.</p>
-              </AlarmText>
-            </MainAnalysisAlarm>
-          </MainAnalysisResult>
-          ;
           <MainAnalysisButton>
-            <button>내 피부 분석</button>
-            <button>내 피부 변화</button>
+            <Link to="/skin/analysis">내 피부 분석</Link>
+            <Link to="/skin/change">내 피부 변화</Link>
           </MainAnalysisButton>
         </div>
         <Footer />

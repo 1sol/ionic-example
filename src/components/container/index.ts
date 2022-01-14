@@ -1,3 +1,4 @@
 import Footer from "./Footer";
+import ImageUploader from "./ImageUploader";
 
-export default Footer;
+export { Footer, ImageUploader };

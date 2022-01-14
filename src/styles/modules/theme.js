@@ -55,6 +55,7 @@ const fontSpacing = {
 };
 
 const paddings = {
+  xxs: calcRem(2),
   xs: calcRem(4),
   small: calcRem(8),
   base: calcRem(10),
