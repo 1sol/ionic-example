@@ -1,3 +1,4 @@
+import React from "react";
 import { setupIonicReact, IonPage } from "@ionic/react";
 
 /* Core CSS required for Ionic components to work properly */
@@ -20,14 +21,17 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import PageRouter from "./routes";
 import { GlobalStyle } from "./styles/modules/global";
+import "./styles/antd.less";
 
 setupIonicReact();
 
 const App: React.FC = () => (
-  <IonPage>
-    <GlobalStyle />
-    <PageRouter />
-  </IonPage>
+  <React.StrictMode>
+    <IonPage>
+      <GlobalStyle />
+      <PageRouter />
+    </IonPage>
+  </React.StrictMode>
 );
 
 export default App;

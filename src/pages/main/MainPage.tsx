@@ -5,9 +5,9 @@ import {
   IonTitle,
   IonContent,
 } from "@ionic/react";
-import Footer from "../../components/container/Footer";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import Footer from "../../components/container";
 
 const Main = styled(IonPage)`
   .contents {

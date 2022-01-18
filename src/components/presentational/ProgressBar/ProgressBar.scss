@@ -1,0 +1,19 @@
+.analysis-loading {
+  .loading-wrapper.sc-ion-loading-md {
+    background: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .loading-spinner {
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  .loading-spinner .sc-ion-loading-md {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,9 +1,9 @@
-import React from "react";
 import { Upload } from "antd";
 import { UploadOutlined } from "@ant-design/icons";
 import ImgCrop from "antd-img-crop";
 import "antd/lib/modal/style";
 import "antd/lib/slider/style";
+import "antd/dist/antd.css";
 
 interface ImageUploaderState {
   fileList: any[];

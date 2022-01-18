@@ -12,7 +12,9 @@ const Photo = styled.div`
   position: absolute;
   top: 15px;
   right: 15px;
-  z-index: 10;
+  img {
+    border: 1px solid #fff;
+  }
 `;
 
 interface WebCamState {
