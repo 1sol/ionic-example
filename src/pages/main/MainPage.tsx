@@ -9,11 +9,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 import Footer from "../../components/container";
 
-const Main = styled(IonPage)`
-  .contents {
-    padding: 0 20px;
-  }
-`;
+const Main = styled(IonPage)``;
 
 const MainAnalysisButton = styled.div``;
 

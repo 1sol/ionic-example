@@ -5,6 +5,7 @@
   "dependencies": {
     "@craco/craco": "^6.4.3",
     "@ionic-native/crop": "^5.36.0",
+    "@ionic/pwa-elements": "^3.1.1",
     "@ionic/react": "^6.0.0",
     "@ionic/react-router": "^6.0.0",
     "@testing-library/jest-dom": "^5.11.9",
@@ -28,6 +29,7 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-error-overlay": "^6.0.9",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.2",
@@ -51,18 +53,24 @@
     "workbox-streams": "^5.1.4"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "yarn set-env development && craco start",
     "build": "craco build",
     "test": "react-scripts test --transformIgnorePatterns 'node_modules/(?!(@ionic/react|@ionic/react-router|@ionic/core|@stencil/core|ionicons)/)'",
+    "set-env": "node ./scripts/prebuild.js",
+    "set-netlify": "node ./scripts/set-netlify.js",
     "eject": "react-scripts eject",
     "ionic:serve": "craco start",
-    "ionic:build": "craco build"
+    "ionic:build": "craco build",
+    "preinstall": "npx npm-force-resolutions"
   },
   "eslintConfig": {
     "extends": [
       "react-app",
       "react-app/jest"
     ]
+  },
+  "resolutions": {
+    "react-error-overlay": "6.0.9"
   },
   "config": {
     "ionic_bundler": "webpack",

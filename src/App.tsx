@@ -20,7 +20,8 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import PageRouter from "./routes";
-import { GlobalStyle } from "./styles/modules/global";
+import "./styles/modules/theme";
+import "./styles/styles.scss";
 import "./styles/antd.less";
 
 setupIonicReact();
@@ -28,7 +29,6 @@ setupIonicReact();
 const App: React.FC = () => (
   <React.StrictMode>
     <IonPage>
-      <GlobalStyle />
       <PageRouter />
     </IonPage>
   </React.StrictMode>
